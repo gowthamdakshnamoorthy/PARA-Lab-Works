@@ -24,16 +24,6 @@ depth_img.seek(pos)
 depth_img.show()
 
 
-'''
-# depths - [PIL_0, ... ,PIL_299]
-depth_array = np.asarray([np.asarray(d) for d in depths])    
-longer version:
-for d in depths:
-    depth_array.append(np.asarray(d))
-depth_array = np.asarray(depth_array)
-'''
-
-
 
     
 
