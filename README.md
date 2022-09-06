@@ -11,5 +11,13 @@ The robot should be capable of doing the following activities: -
 * It should be able to adjust the altitude of the camera with respect to the diameter of the pipe.
 
 This is an image of the robot frame designed by [Mr.Rohit Kalyan](https://www.linkedin.com/in/rohith-kalyan-kavadapu/)
-<imgs src='imgs/horse2zebra.gif' align="center" width=384>
+
+<img src='imgs/Screenshot 2022-08-27 220944.png'  width=500>
+
+The robot consists of following elements: -
+
+
+The frame is extracted from [Yahboom G1 Tank Robot](https://category.yahboom.net/products/g1tank) as it has enough space to house the circuitry of the robot.
+
+Firstly [Arduino Mega 2560T](https://store-usa.arduino.cc/products/arduino-mega-2560-rev3?selectedStore=us) microcontroller was used to control the elements of the robot
 
