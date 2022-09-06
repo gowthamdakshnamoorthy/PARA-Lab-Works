@@ -17,7 +17,7 @@ This is an image of the robot frame CAD model designed by [Mr.Rohit Kalyan](http
 <img src='imgs/Screenshot 2022-08-27 220944.png'  width=500>
 
 The robot consists of following hardware elements: -
-- 1x [NEMA-17 Stepper motor](https://www.digikey.com/en/products/detail/trinamic-motion-control-gmbh/QSH4218-51-10-049/4843427?s=N4IgjCBcpgLFoDGUBmBDANgZwKYBoQB7KAbRACZYBOAVgA4A2EAXQIAcAXKEAZQ4CcAlgDsA5iAC%2BBAMxUADAhDJI6bPiKkQNKgyrxWITtz5CxkggwDsNRctW4CxSGWlgql9y3ZdIvASPEpCnJKW1RMBw1nCjkFAyNfABFCAFcAIwwccxAAWnIwyAEU9ScyG2YJIPzo4RwAWzQAAjBLFgkgA)
+- 1x [NEMA-17 Bipolar Stepper motor](https://www.digikey.com/en/products/detail/trinamic-motion-control-gmbh/QSH4218-51-10-049/4843427?s=N4IgjCBcpgLFoDGUBmBDANgZwKYBoQB7KAbRACZYBOAVgA4A2EAXQIAcAXKEAZQ4CcAlgDsA5iAC%2BBAMxUADAhDJI6bPiKkQNKgyrxWITtz5CxkggwDsNRctW4CxSGWlgql9y3ZdIvASPEpCnJKW1RMBw1nCjkFAyNfABFCAFcAIwwccxAAWnIwyAEU9ScyG2YJIPzo4RwAWzQAAjBLFgkgA)
 - 2x [PA-07 Linear Actuator](https://images-na.ssl-images-amazon.com/images/I/A12fkCZbVcL.pdf)
 - 2x [Encoder Metal Gearmotor](https://gistgear.com/product/B07GNGGCVP)
 
@@ -37,4 +37,9 @@ In total the robot consists of 4 DC Motors (including 2 Linear Actuators) and 1 
 <img src='imgs/Screenshot 2022-09-05 212731.png'  width=500>
 
 ### Stepper Motor Control
-The main purpose of using a stepper motor to rotate the camera, instead of a DC motor is for a proper scan of the inner wall by camera, the rotation of the camera should be as slow and smooth as possible. If not slow, then it will result in poor quality of depth image 
+The main purpose of using a stepper motor to rotate the camera, instead of a DC motor is for a proper scan of the inner wall by camera, the rotation of the camera should be as slow and smooth as possible. If not slow, then it will result in poor quality of depth image. The [A4988 Stepper Motor Driver](https://www.pololu.com/product/1182) aids in speed and direction control of NEMA-17 bipolar stepper motor. Well, the only disadvantage of this driver is that in order to use the driver it needs to be inserted into a breadboard unlike L298N Motor Driver. This driver enables to microstep the stepper motor to its 1/16 of its base speed. The another disadvantage of this driver is that sometimes, it gets heated quickly which in turn damages the IC of the driver. This [link](https://lastminuteengineers.com/a4988-stepper-motor-driver-arduino-tutorial/) will give a better understanding of using the driver for stepper motor control.
+
+<img src='imgs/Screenshot 2022-09-05 220936.png'  width=500>
+
+The arduino program written for these drivers are quite primitive where the fucntions of the drivers were activated using simple HIGH and LOW signals from Arduino microcontroller.
+
