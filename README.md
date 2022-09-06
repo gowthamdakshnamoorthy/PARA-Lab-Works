@@ -14,7 +14,10 @@ This is an image of the robot frame designed by [Mr.Rohit Kalyan](https://www.li
 
 <img src='imgs/Screenshot 2022-08-27 220944.png'  width=500>
 
-The robot consists of following elements: -
+The robot consists of following hardware elements: -
+- 1x [NEMA-17 Stepper motor](https://www.digikey.com/en/products/detail/trinamic-motion-control-gmbh/QSH4218-51-10-049/4843427?s=N4IgjCBcpgLFoDGUBmBDANgZwKYBoQB7KAbRACZYBOAVgA4A2EAXQIAcAXKEAZQ4CcAlgDsA5iAC%2BBAMxUADAhDJI6bPiKkQNKgyrxWITtz5CxkggwDsNRctW4CxSGWlgql9y3ZdIvASPEpCnJKW1RMBw1nCjkFAyNfABFCAFcAIwwccxAAWnIwyAEU9ScyG2YJIPzo4RwAWzQAAjBLFgkgA)
+- 2x [PA-07 Linear Actuator](https://images-na.ssl-images-amazon.com/images/I/A12fkCZbVcL.pdf)
+- 2x [Encodeer Metal Gearmotor](https://gistgear.com/product/B07GNGGCVP)
 
 
 The frame is extracted from [Yahboom G1 Tank Robot](https://category.yahboom.net/products/g1tank) as it has enough space to house the circuitry of the robot.
