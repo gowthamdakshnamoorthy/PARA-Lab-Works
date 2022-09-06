@@ -41,5 +41,5 @@ The main purpose of using a stepper motor to rotate the camera, instead of a DC 
 
 <img src='imgs/Screenshot 2022-09-05 220936.png'  width=500>
 
-The arduino program written for these drivers are quite primitive where the fucntions of the drivers were activated using simple HIGH and LOW signals from Arduino microcontroller.
+The arduino program written for these drivers are quite primitive where the fucntions of the drivers were activated using simple HIGH and LOW signals from Arduino microcontroller. By combining all the drivers and hardware elements together, it was possible to attain a sequential control of the robot. But there was a necessity to upgrade the existing controller. So the Arduino Mega 2560 was replaced with [Raspberry Pi 4 Model B](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/) Single Board Computer.
 
