@@ -11,5 +11,5 @@ The robot should be capable of doing the following activities: -
 * It should be able to adjust the altitude of the camera with respect to the diameter of the pipe.
 
 This is an image of the robot frame designed by [Mr.Rohit Kalyan](https://www.linkedin.com/in/rohith-kalyan-kavadapu/)
-<img src='imgs/horse2zebra.gif' align="center" width=384>
+<imgs src='imgs/horse2zebra.gif' align="center" width=384>
 
