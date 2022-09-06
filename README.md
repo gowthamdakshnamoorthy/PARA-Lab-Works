@@ -9,7 +9,9 @@ The robot should be capable of doing the following activities: -
 * It should be capable of wireless control when the robot is inside the pipeline.
 * It should house its own power supply.
 * It should be able to adjust the altitude of the camera with respect to the diameter of the pipe.
+ 
 
+## Arduino version of the robot
 This is an image of the robot frame CAD model designed by [Mr.Rohit Kalyan](https://www.linkedin.com/in/rohith-kalyan-kavadapu/)
 
 <img src='imgs/Screenshot 2022-08-27 220944.png'  width=500>
@@ -28,3 +30,11 @@ and for wireless control of the robot, [a wireless PS2 console with receiver](ht
  <img src='imgs/IMG_20220323_1013221.jpg' align="center" width=300>
 
 As the programming of Arduino is done using C, the [Arduino-PS2X Library](https://github.com/madsci1016/Arduino-PS2X) could be added to the Arduino IDE. With help of this library every buttons of the console could be accessed for individual function(s).
+
+### DC Motor Control
+In total the robot consists of 4 DC Motors (including 2 Linear Actuators) and 1 Stepper motor. So for control of the DC motors, [L289N Motor Drivers](https://lastminuteengineers.com/l298n-dc-stepper-driver-arduino-tutorial/) were used. This driver enables both speed and direction control of DC motors as it is capable of working with PWM signals for speed control and it has an in-built H-bridge for direction control. Therefore by using two of these, 4 DC motors could be controlled individually.
+
+<img src='imgs/Screenshot 2022-09-05 212731.png'  width=500>
+
+### Stepper Motor Control
+The main purpose of using a stepper motor to rotate the camera, instead of a DC motor is for a proper scan of the inner wall by camera, the rotation of the camera should be as slow and smooth as possible. If not slow, then it will result in poor quality of depth image 
