@@ -10,17 +10,21 @@ The robot should be capable of doing the following activities: -
 * It should house its own power supply.
 * It should be able to adjust the altitude of the camera with respect to the diameter of the pipe.
 
-This is an image of the robot frame designed by [Mr.Rohit Kalyan](https://www.linkedin.com/in/rohith-kalyan-kavadapu/)
+This is an image of the robot frame CAD model designed by [Mr.Rohit Kalyan](https://www.linkedin.com/in/rohith-kalyan-kavadapu/)
 
 <img src='imgs/Screenshot 2022-08-27 220944.png'  width=500>
 
 The robot consists of following hardware elements: -
 - 1x [NEMA-17 Stepper motor](https://www.digikey.com/en/products/detail/trinamic-motion-control-gmbh/QSH4218-51-10-049/4843427?s=N4IgjCBcpgLFoDGUBmBDANgZwKYBoQB7KAbRACZYBOAVgA4A2EAXQIAcAXKEAZQ4CcAlgDsA5iAC%2BBAMxUADAhDJI6bPiKkQNKgyrxWITtz5CxkggwDsNRctW4CxSGWlgql9y3ZdIvASPEpCnJKW1RMBw1nCjkFAyNfABFCAFcAIwwccxAAWnIwyAEU9ScyG2YJIPzo4RwAWzQAAjBLFgkgA)
 - 2x [PA-07 Linear Actuator](https://images-na.ssl-images-amazon.com/images/I/A12fkCZbVcL.pdf)
-- 2x [Encodeer Metal Gearmotor](https://gistgear.com/product/B07GNGGCVP)
+- 2x [Encoder Metal Gearmotor](https://gistgear.com/product/B07GNGGCVP)
 
 
 The frame is extracted from [Yahboom G1 Tank Robot](https://category.yahboom.net/products/g1tank) as it has enough space to house the circuitry of the robot.
 
 Firstly [Arduino Mega 2560T](https://store-usa.arduino.cc/products/arduino-mega-2560-rev3?selectedStore=us) microcontroller was used to control the elements of the robot
+and for wireless control of the robot, [a wireless PS2 console with receiver](https://www.aliexpress.com/item/3256802091612214.html?spm=a2g0o.productlist.main.3.3f7233f2mgTtwv&algo_pvid=6e6fdc5c-17b3-453b-be27-cf4d24ffc3d4&algo_exp_id=6e6fdc5c-17b3-453b-be27-cf4d24ffc3d4-1&pdp_ext_f=%7B%22sku_id%22%3A%2212000019882328062%22%7D&pdp_npi=2%40dis%21USD%218.62%218.62%21%21%21%21%21%40210217fe16624359715848540d073b%2112000019882328062%21sea&curPageLogUid=mezlEgkJVCH2) was used. The receiver of the PS2 wireless console, when connected with the Arduino board by means of jumper wire allows us to send signal to the Arduino by means of PS2 Console. This [link](https://create.arduino.cc/projecthub/igorF2/arduino-robot-with-ps2-controller-playstation-2-joystick-85bddc) will give a better understanding for connecting the PS2 receiver with Arduino microcontroller
 
+ <img src='imgs/IMG_20220323_1013221.jpg' align="center" width=300>
+
+As the programming of Arduino is done using C, the [Arduino-PS2X Library](https://github.com/madsci1016/Arduino-PS2X) could be added to the Arduino IDE. With help of this library every buttons of the console could be accessed for individual function(s).
