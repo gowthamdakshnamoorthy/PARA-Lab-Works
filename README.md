@@ -49,3 +49,9 @@ Raspberry Pi has a lot of advantages over Arduino such as Wireless connection to
 As the controller is changed from Arduino to Raspberry Pi, it gave an opportunity to improve the Console from PS2 to PS4 it spares the external receiver module. Since the motor drivers are unchanged the existing program is being converted to Python script.
 
 Firstly the RaspiOS is installed onto a SD Card and two files, **ssh** and **wpa_supplicant.conf** are being added to the sd card. This [link](https://linuxhint.com/rasperberry_pi_wifi_wpa_supplicant/) will give a clear picture of how to connect with a Raspberry Pi SBC in a wireless manner. After converting the program to Python script. In addition, [AS5600 rotary encoder](https://ams.com/en/as5600) was installed externally over the rear end of the NEMA-17 shaft. As there is no proper library for Raspberry Pi to process the signals, so the encoder is connected to [Arduino Uno](https://store-usa.arduino.cc/products/arduino-uno-rev3) by means of jumper cables and then, Arduino Uno is connected to Raspberry Pi by means of USB Serial Connection. Then that angular data could be streamed simultaneously to the main server.  
+
+After deciding, all the circuitry were transferred to the robot frame and trial-tested. This is an image of the robot with all the circuitry.
+
+
+<img src='imgs/Screenshot 2022-09-06 205858.png' align="center" width=300>
+One of the major problems was the complexity in circuitry due to bunch of jumper wires between all the hardware elements, Raspberry Pi and Arduino which is kind of messy. And the other problem is, it takes a lot of time to cross-check the connections if any one of the connections gets messed up. So in order to resolve this issue, the 
