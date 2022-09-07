@@ -54,4 +54,6 @@ After deciding, all the circuitry were transferred to the robot frame and trial-
 
 
 <img src='imgs/Screenshot 2022-09-06 205858.png' align="center" width=300>
-One of the major problems was the complexity in circuitry due to bunch of jumper wires between all the hardware elements, Raspberry Pi and Arduino which is kind of messy. And the other problem is, it takes a lot of time to cross-check the connections if any one of the connections gets messed up. So in order to resolve this issue, the 
+One of the major problems was the complexity in circuitry due to bunch of jumper wires between all the hardware elements, Raspberry Pi and Arduino which is kind of messy. And the other problem is, it takes a lot of time to cross-check the connections if any one of the connections gets messed up. So in order to resolve this issue, the existing circuitry need to be optimized. Therefore the drivers were replaced by [Arduino](https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi/stacking-hats?view=all&gclid=Cj0KCQjwjbyYBhCdARIsAArC6LJzinDjJiDytur5MnukkRWa7DaCcHueU-hqwE7uCNn5JgHK09tOKbQaAuCOEALw_wcB)
+
+It has lot of advantages over conventional drivers, one of them is that the wiring required could be reduced to half and when it comes to using the drivers, in order to use it for different purposes, the 
