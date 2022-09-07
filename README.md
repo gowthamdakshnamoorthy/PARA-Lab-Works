@@ -12,7 +12,7 @@ The robot should be capable of doing the following activities: -
  
 
 ## Arduino version of the robot
-This is an image of the robot frame CAD model designed by [Mr.Rohit Kalyan](https://www.linkedin.com/in/rohith-kalyan-kavadapu/)
+This is an image of the robot frame CAD model designed by [Mr.Rohith Kalyan Kavadapu](https://www.linkedin.com/in/rohith-kalyan-kavadapu/)
 
 <img src='imgs/Screenshot 2022-08-27 220944.png'  width=500>
 
@@ -54,6 +54,23 @@ After deciding, all the circuitry were transferred to the robot frame and trial-
 
 
 <img src='imgs/Screenshot 2022-09-06 205858.png' align="center" width=300>
-One of the major problems was the complexity in circuitry due to bunch of jumper wires between all the hardware elements, Raspberry Pi and Arduino which is kind of messy. And the other problem is, it takes a lot of time to cross-check the connections if any one of the connections gets messed up. So in order to resolve this issue, the existing circuitry need to be optimized. Therefore the drivers were replaced by [Arduino](https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi/stacking-hats?view=all&gclid=Cj0KCQjwjbyYBhCdARIsAArC6LJzinDjJiDytur5MnukkRWa7DaCcHueU-hqwE7uCNn5JgHK09tOKbQaAuCOEALw_wcB)
+One of the major problems was the complexity in circuitry due to bunch of jumper wires between all the hardware elements, Raspberry Pi and Arduino which is kind of messy. And the other problem is, it takes a lot of time to cross-check the connections if any one of the connections gets messed up. So in order to resolve this issue, the existing circuitry need to be optimized. Therefore the drivers were replaced by Adafruit DC and Stepper Motor HAT
 
-It has lot of advantages over conventional drivers, one of them is that the wiring required could be reduced to half and when it comes to using the drivers, in order to use it for different purposes, the 
+## Replacement of motor drivers with Hardware Attached on Top (HAT)
+
+It has lot of advantages over conventional drivers, one of them is that the wiring required could be reduced to half and when it comes to using the drivers, in order to use it for different purposes, the programming logic was kind of primitive i.e., in terms of HIGH and LOW pulses for activating the functions of the drivers. But in the case HAT's, it does have its own library compatible for python. With its inbuilt functions, the programming was simplified to a great extent and to mention, it is possible to stack HAT's one upon another. 
+
+But it does have a disadvantage, as the HAT's are stacked upon Raspberry Pi, it will not be possible to access any GPIO pins for any other use. This [link](https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi/stacking-hats?view=all&gclid=Cj0KCQjwjbyYBhCdARIsAArC6LJzinDjJiDytur5MnukkRWa7DaCcHueU-hqwE7uCNn5JgHK09tOKbQaAuCOEALw_wcB#stacking-hats) gives a better idea about stacking of HAT's.
+
+<img src='imgs/IMG_20220901_103219.jpg' align="center" width=400>
+
+All the elements are being transferred to HAT and then the, robot is being made functional for trials inside the pipeline.
+
+## Future Scope of Work
+* Design Alteration of the belt assembly to make radial contact with the inner wall of the gas pipeline.
+* Implementation of ROS to localize the robot inside the gas pipeline using visual SLAM.
+
+## Credits
+I would like to thank [Mr.Rahul Rathnakumar](https://www.linkedin.com/in/rahulkumaraviator/) for guiding me whenever I needed. I would also like to extend my thanks to [Mr.Rohith Kalyan Kavadapu](https://www.linkedin.com/in/rohith-kalyan-kavadapu/) and [Mr.Abhishek Shrinivas Loganathan](https://www.linkedin.com/in/abhishek-shrinivas-loganathan-b529081a9/) for helping me in this project. 
+
+
