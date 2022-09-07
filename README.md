@@ -60,7 +60,7 @@ One of the major problems was the complexity in circuitry due to bunch of jumper
 
 It has lot of advantages over conventional drivers, one of them is that the wiring required could be reduced to half and when it comes to using the drivers, in order to use it for different purposes, the programming logic was kind of primitive i.e., in terms of HIGH and LOW pulses for activating the functions of the drivers. But in the case HAT's, it does have its own library compatible for python. With its inbuilt functions, the programming was simplified to a great extent and to mention, it is possible to stack HAT's one upon another. 
 
-But it does have a disadvantage, as the HAT's are stacked upon Raspberry Pi, it will not be possible to access any GPIO pins for any other use. This [link](https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi/stacking-hats?view=all&gclid=Cj0KCQjwjbyYBhCdARIsAArC6LJzinDjJiDytur5MnukkRWa7DaCcHueU-hqwE7uCNn5JgHK09tOKbQaAuCOEALw_wcB#stacking-hats) gives a better idea about stacking of HAT's.
+But it does have a disadvantage, as the HAT's are stacked upon Raspberry Pi, it will not be possible to access any GPIO pins for any other use. This [link](https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi/stacking-hats?view=all&gclid=Cj0KCQjwjbyYBhCdARIsAArC6LJzinDjJiDytur5MnukkRWa7DaCcHueU-hqwE7uCNn5JgHK09tOKbQaAuCOEALw_wcB#stacking-hats) gives a better idea about stacking of HAT's. And to mention, the parts of HAT will be delevered individually, so soldering needs to be done manually unlike conventional motor drivers.
 
 <img src='imgs/IMG_20220901_103219.jpg' align="center" width=400>
 
