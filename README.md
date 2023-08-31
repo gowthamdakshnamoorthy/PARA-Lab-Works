@@ -12,7 +12,7 @@ The robot should be capable of doing the following activities: -
  
 
 ## Arduino version of the robot
-This is an image of the robot frame CAD model designed by [Mr.Rohith Kalyan Kavadapu](https://www.linkedin.com/in/rohith-kalyan-kavadapu/)
+
 
 <img src='imgs/Screenshot 2022-08-27 220944.png'  width=500>
 
