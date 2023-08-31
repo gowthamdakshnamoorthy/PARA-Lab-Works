@@ -71,6 +71,6 @@ All the elements are being transferred to HAT and then the, robot is being made 
 * Implementation of ROS to localize the robot inside the gas pipeline using visual SLAM.
 
 ## Credits
-I would like to thank [Mr.Rahul Rathnakumar](https://www.linkedin.com/in/rahulkumaraviator/) for guiding me whenever I needed. I would also like to extend my thanks to [Mr.Rohith Kalyan Kavadapu](https://www.linkedin.com/in/rohith-kalyan-kavadapu/) and [Mr.Abhishek Shrinivas Loganathan](https://www.linkedin.com/in/abhishek-shrinivas-loganathan-b529081a9/) for helping me in this project. 
+I would like to thank [Mr.Rahul Rathnakumar](https://www.linkedin.com/in/rahulkumaraviator/) for guiding me whenever I needed.
 
 
